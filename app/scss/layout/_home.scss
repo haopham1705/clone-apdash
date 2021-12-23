@@ -67,6 +67,7 @@
         h5 {
             font-size: 3rem;
             font-weight: 550;
+            color: $title-text-color;
         }
         p {
             font-size: 1.6rem;
@@ -114,5 +115,24 @@
     }
     &__text {
         margin: 0;
+    }
+}
+.content-bg {
+    &__title {
+        font-size: 3rem;
+        font-weight: 550;
+    }
+    &__text {
+        font-size: 1.2rem;
+    }
+    &__download {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 2rem;
+
+        .btn-download {
+            margin: 1rem 0;
+        }
     }
 }

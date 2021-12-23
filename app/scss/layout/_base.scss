@@ -23,17 +23,19 @@ img {
     width: 100%;
     height: auto;
 }
-.title-text {
+.title-font {
     font-family: "Montserrat", sans-serif;
-    color: $title-text-color;
 }
 .btn {
     position: relative;
     font-family: "Montserrat", sans-serif;
     font-size: 1.2rem;
     font-weight: 500;
-    padding: 15px 35px;
+    padding: 10px 35px;
     transition: all 300ms ease-in-out;
+}
+.btn:hover {
+    color: $white-color;
 }
 .btn-rounded {
     border-radius: 10rem;
@@ -79,4 +81,19 @@ img {
     background-color: $white-color;
     font-size: 1.5rem;
     color: $text-color;
+}
+.btn-download {
+    color: $white-color;
+    display: inline-flex;
+    align-items: center;
+    background-color: $rose-color;
+    border-radius: 50px;
+    i {
+        margin-right: 10px;
+        font-size: 2rem;
+    }
+}
+.btn-download:hover {
+    background-color: $primary-color;
+    color: $white-color;
 }
