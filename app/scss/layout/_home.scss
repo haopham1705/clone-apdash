@@ -13,7 +13,6 @@
         font-weight: 530;
         line-height: 1.25;
     }
-
     p {
         font-size: 1.8rem;
         margin: 0;
@@ -45,12 +44,75 @@
                     font-size: 1.3rem;
                 }
             }
-
         }
         i {
             font-size: 1.5rem;
         }
     }
+}
+.card-info {
+    border: 1px solid $border-color;
+    box-shadow: $shadow-card-primary;
+    
+    &__body {
+        padding: 2.5rem;
+        color: $text-color; 
 
+    }
+    &__icon {
+        font-size: 4rem;
+        color: $primary-color;
+    }
+    &__content {
+        h5 {
+            font-size: 3rem;
+            font-weight: 550;
+        }
+        p {
+            font-size: 1.6rem;
+            margin: 1rem 0 0; 
+        }
+    }
+}
+.content-list {
+    color: $text-color;
+    font-size: 1.4rem;
+    line-height: 1.7; 
 
+    &__title {
+        font-size: 3rem;
+    }
+    &__text {
+        margin: 2.5rem 0;
+    }
+    &__list {
+        list-style-type: none;
+        li {
+            margin: 1.5rem 0;
+            display: flex;
+            align-items: baseline;
+        }
+        i {
+            color: $primary-color;
+            margin-right: 1.4rem;
+            font-size: 1rem;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+.counter-info {
+    text-align: center;
+    margin: 2.5rem 0;
+    &__number {
+        font-size: 2.5rem;
+        color: $primary-color;
+        font-weight: 550;
+    }
+    &__text {
+        margin: 0;
+    }
 }
