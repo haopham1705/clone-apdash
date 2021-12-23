@@ -1,0 +1,148 @@
+
+/* Mobile */
+@include maxWidth(739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .header__logo {
+        width: unset;
+    }
+}
+
+/* Mobile & Tablet */
+@include maxWidth(1023px) {
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+
+    .header {
+        width: 100%;
+        height: $header-height;
+    }
+}
+
+/* Tablet */
+@include betweenWidth(740px, 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+}
+
+/* PC */
+@include minWidth(1024px) {
+    $header-height: 75px;
+
+    #app {
+        overflow: inherit;
+    }
+
+    .hide-on-pc {
+        display: none;
+    }
+
+    .header {
+        position: sticky;
+        top: 0;
+        box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+        // border: 1px solid red;
+
+        &__logo {
+            width: 100%;
+            max-width: 20vw;
+            img {
+                width: 100%;
+                max-width: 145px;
+                height: auto;
+            }
+        }
+        .sidenav {
+            position: static;
+            width: 100%;
+            height: auto;
+            box-shadow: none;
+            padding: 0;
+            margin: 0;
+
+            &__list {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                height: auto;
+                margin: 0;
+                padding: 0;
+            }
+            &__item {
+                border: none;
+                position: relative;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    font-weight: 600;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    padding: 15px 0;
+
+                    i {
+                        margin-left: 2px;
+                    }
+                }
+                a:hover {
+                    color: $primary-color;
+                }
+            }
+            &__item:last-child {
+                border: none;
+            }
+            .subnav {
+                display: none;
+                position: absolute;
+                top: 35px;
+                left: -15px;
+                background-color: $light-grey-color;
+                min-width: 150px;
+                padding: 10px;
+                box-shadow: 0px 10px 30px 0px rgb(50 50 50 / 16%);
+                z-index: 10;
+                transition: 0.5s;
+                border-radius: 3px;
+
+                &__item {
+                    border: 0;
+                    padding: 5px 0;
+                }
+                a {
+                    display: block;
+                    text-align: left;
+                    padding: 5px 0;
+                    margin: 0;
+                    font-size: 1.1rem;
+                    font-weight: 400;
+                }
+                a:hover {
+                    color: $primary-color;
+                }
+            }
+            &__dropdown:hover .subnav {
+                display: block;
+            }
+            .closebtn {
+                display: none;
+            }
+        }
+    }
+    #sidenav-list {
+        display: flex;
+    }
+
+    .main-content {
+        padding-top: 0;
+        &__slider {
+            height: 100vh;
+            img {
+                object-fit: cover;
+            }
+        }
+    }  
+}

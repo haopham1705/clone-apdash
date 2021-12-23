@@ -1,0 +1,56 @@
+
+.home-hero {
+    background: $gradient-primary-bg;
+    &__img {
+        margin-bottom: 10rem;
+    }
+}
+.home-head {
+    color: $white-color;
+    
+    h1 {
+        font-size: 4.2rem;
+        font-weight: 530;
+        line-height: 1.25;
+    }
+
+    p {
+        font-size: 1.8rem;
+        margin: 0;
+    }
+    &__btn-control {
+        display: flex;
+        justify-content: space-between;
+        margin: 2rem 0;
+    }
+    &__btn-play{
+        span {
+            margin-left: 1rem;
+        }
+    }
+
+    &__counter-info {
+        margin-top: 2rem;
+        .counter-item {
+            display: flex;
+            align-items: center; 
+            padding: 1rem 0;
+
+            &__counter {
+                margin-right: 1.4rem;
+                span {
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 1.3rem;
+                }
+            }
+
+        }
+        i {
+            font-size: 1.5rem;
+        }
+    }
+
+
+}

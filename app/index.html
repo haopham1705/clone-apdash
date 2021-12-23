@@ -1,0 +1,110 @@
+<!-- File this use compress file css js - gulp useref -->
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keyword" content="website business, economic, stocks">
+    <meta property="og:url" content="https://haopham1705.github.io/clone-apdash-website" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="business web" />
+    <meta property="og:description" content="business website, chuyên trang kinh doanh" />
+    <meta property="og:image" content="" />
+    <link rel="shortcut icon" href="images/vnexpress-e-logo.ico" type="image/x-icon">
+
+    <title>
+        <!-- build:title -->
+    </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,400,500,600,700,800,900">
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800'>
+
+    <!-- build:cssOnlyPage -->
+    <link rel="preload" as="style" type="text/css" href="css/main-style.min.css">
+    <link rel="stylesheet" href="css/main-style.min.css">
+    <script type="text/javascript">
+        var domReadyQueue = [];
+    </script>
+    <!-- build:headOnlyPage -->
+
+</head>
+
+<body class="oBusiness" id="webViet_body" itemscope itemtype="http://schema.org/WebPage">
+    <div class="load"><span class="loading"></span></div>
+    <div class="space-header-fixed"></div>
+    <header class="header">
+    </header>
+    <!-- build:content -->
+
+    <!-- build:footer -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <p>Created By Pham Van Hao</p>
+                <p>@Copyright PVH</p>
+            </div>
+        </div>
+    </footer>
+    <span class="back-to-top-badge back-to-top-small"><i class="fal fa-angle-up"></i></span>
+    <!-- /build:footer -->
+
+    <!-- <script type="text/javascript" src="js/main.min.js?v=99"></script> -->
+    <script type="text/javascript" data-type="lazy" data-src="js/main.min.js"></script>
+    <script type="text/javascript" id="flying-scripts">
+        const loadScriptsTimer = setTimeout(loadScripts, 2 * 1000);
+        const userInteractionEvents = ["mouseover", "keydown", "touchstart", "touchmove", "wheel"];
+        userInteractionEvents.forEach(function (event) {
+            window.addEventListener(event, triggerScriptLoader, {
+                passive: !0
+            })
+        });
+
+        function triggerScriptLoader() {
+            loadScripts();
+            clearTimeout(loadScriptsTimer);
+            userInteractionEvents.forEach(function (event) {
+                window.removeEventListener(event, triggerScriptLoader, {
+                    passive: !0
+                })
+            })
+        }
+        function loadScripts() {
+            document.querySelectorAll("script[data-type='lazy']").forEach(function (elem) {
+                elem.setAttribute("src", elem.getAttribute("data-src"))
+            })
+        }
+    </script>
+    <script type="text/javascript">
+        domReadyQueue.push(function ($) {
+            // you code here
+        });
+    </script>
+
+    <!--build:js js/main.min.js -->
+    <script src="js/lib/jquery-3.4.1.min.js"></script>
+    <!-- <script src="js/lib/popper.min.js"></script> -->
+    <!-- <script src="js/lib/bootstrap.min.js"></script> -->
+    <!-- <script src="js/lib/jquery.appear.js"></script> -->
+    <!-- <script src="js/lib/wow.js"></script> -->
+    <!-- <script src="js/lib/lightslider.js"></script> -->
+    <script src="js/lib/bootstrap.min.js"></script>
+    <!-- <script src="js/lib/slick-1.8.min.js"></script> -->
+    <!-- <script src="js/lib/jquery.countTo.js"></script> -->
+    <!-- <script src="js/lib/jquery.countdown.min.js"></script> -->
+    <script src="js/lib/swiper.min.js"></script>
+    <script src="js/lib/owl.carousel.min.js"></script>
+    <!-- <script src="js/lib/jquery.nicescroll.min.js" defer></script> -->
+    <!-- <script src="js/lib/perfect-scrollbar.js"></script> -->
+    <script src="js/lib/lightgallery-all.min.js"></script>
+    <script src="js/script-pc.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:jsOnlyPage -->
+</body>
+
+</html>

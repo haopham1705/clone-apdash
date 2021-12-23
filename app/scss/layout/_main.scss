@@ -1,0 +1,138 @@
+// @import "./variables";
+// @import "./mixins";
+
+#app {
+    // transition: margin-left 0.5s;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 1.2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: $header-height;
+    z-index: 99;
+    background: $gradient-primary-bg;
+    box-shadow: $shadow-header-value;
+    transition: all 0.5s;
+
+    &__navbar {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        img {
+            width: 100%;
+            max-width: 145px;
+        }
+    }
+
+    /* Header Side Navbar */
+    #mySidenav {
+    }
+    .sidenav {
+        width: 100%;
+        height: 0;
+        position: fixed;
+        top: $header-height;
+        left: 0; 
+        background: $gradient-primary-bg;
+        box-shadow: 5px 0px 22px 0px rgba(0, 0, 0, 0.34);
+        font-size: 1.5rem;
+        // border: 1px solid red;
+
+        &__list {
+            margin-top: 1rem;
+        }
+        &__icon {
+            color: $white-color;
+            font-size: 2rem;
+        }
+        &__item {
+            display: block;
+            position: relative;
+            font-weight: 500;
+            color: $white-color;
+
+            .subnav {
+                display: none;
+                position: initial;
+                top: 100%;
+                left: 0;
+                background: $gradient-primary-bg;
+                box-shadow: $shadow-header-value;
+                list-style-type: none;
+                &__item {
+                    padding: 5px 0 0 1.4rem;
+                    font-weight: 500;
+                }
+            }
+            a {
+                padding: 10px;
+                margin-left: 2rem;
+                display: block;
+                transition: 0.3s;
+                text-decoration: none;
+                color: $white-color;
+
+            }
+            a:hover {
+                // color: $primary-color;
+                background-color: $rose-color;
+                
+            }
+            i {
+                font-size: 1.2rem;
+                color: $white-color;
+                margin-left: 0.5rem;
+            }
+            .dropdown-btn {
+            }
+        } 
+    }
+}
+#sidenav-list {
+    display: none;
+}
+
+.main-content {
+    padding-top: $header-height;
+}
+
+.head__slider {
+    img {
+        display: block;
+        width: 100%;
+        height: 90vh;
+        object-fit: cover;
+    }
+}
+
+/* Section Content */
+.section-block {
+    padding: 8rem 0px;
+    background-color: $white-color;
+}
+
+.section-bg-scroll {
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    padding: 90px 0px 90px 0px;
+    color: $white-color;
+    box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.663);
+
+    p {
+        color: $white-color;
+    }
+}
+
+/* Footer Style */
+.footer {
+}

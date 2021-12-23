@@ -1,0 +1,35 @@
+// Break-point Responsive
+@mixin maxWidth($value) {
+    @media screen and (max-width: $value){
+        @content;
+    }
+}
+
+@mixin minWidth($value) {
+    @media screen and (min-width: $value) {
+        @content;
+    }    
+}
+
+@mixin betweenWidth($valueMin, $valueMax) {
+    @media screen and (min-width: $valueMin) and (max-width: $valueMax) {
+        @content;
+    }
+}
+
+// Direction element
+@mixin absoluteCenter($direction: 'left') {
+    @if $direction == 'left' {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    @if $direction == 'top' {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    @if $direction == 'both' {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
