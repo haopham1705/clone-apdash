@@ -53,6 +53,12 @@
         }
     }
 }
+.card-y {
+    transition: all .2s;
+}
+.card-y:hover {
+    transform: translateY(-10px);
+}
 .card-info {
     border: 1px solid $border-color;
     box-shadow: $shadow-card-primary;
@@ -60,6 +66,7 @@
     padding: 1rem;
     line-height: 1.8;
     margin: 1rem;
+    cursor: pointer;
 
     &__body {
         padding: 2rem;
@@ -228,7 +235,7 @@
 }
 .card-pricing {
     text-align: center;
-    box-shadow: $shadow-card-secondary;
+    box-shadow: $shadow-card-primary;
     padding: 30px;
     border-radius: 15px;
     border-top: 4.5px solid $primary-color;
@@ -265,6 +272,9 @@
         }
     }
 }
+.card-pricing:hover {
+    box-shadow: $shadow-card-secondary;
+}
 .help-text-info {
     margin: 5rem 0;
     &__title {
@@ -279,20 +289,23 @@
 .contact-field {
     border-radius: 5px;
     background-color: #f2f2f2;
-    padding: 20px;
+    padding: 45px;
     margin: 1rem;
 
     &__title {
         font-size: 2rem;
         color: $title-text-color;
+        font-weight: 550;
+        word-spacing: 3px;
     }
 
     input[type="text"],
+    input[type="email"],
     select,
     textarea {
         width: 100%;
         padding: 12px;
-        border: 1px solid #ccc;
+        border: 1px solid #e5e9f2;
         border-radius: 4px;
         box-sizing: border-box;
         margin-top: 6px;
@@ -302,11 +315,13 @@
 
     input[type="submit"] {
         background-color: $primary-color;
-        color: white;
-        padding: 12px 20px;
+        color: $white-color;
+        padding: 12px 30px;
         border: none;
         border-radius: 4px;
         cursor: pointer;
+        opacity: 0.6;
+        font-size: 1.3rem;
     }
 
     input[type="submit"]:hover {

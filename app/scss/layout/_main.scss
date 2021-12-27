@@ -410,8 +410,6 @@
         width: 100%;
         position: relative;
     }
-
-    /* fix blank or flashing items on carousel */
     .owl-carousel {
         .item {
             position: relative;
@@ -419,16 +417,13 @@
             -webkit-backface-visibility: hidden;
             padding: 18px;
         }
-    }
-
-    /* end fix */
+    } 
     .owl-nav > div {
         margin-top: -26px;
         position: absolute;
         top: 50%;
         color: #cdcbcd;
     }
-
     .owl-nav i {
         font-size: 52px;
     }

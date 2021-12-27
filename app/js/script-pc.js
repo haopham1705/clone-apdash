@@ -24,7 +24,7 @@ jQuery(document).ready(function ($) {
         autoplay: true,
         loop: true,
         mouseDrag: true,
-        touchDrag: true,  
+        touchDrag: true,
         // responsive: {
         // 767: {
         // nav: true,
