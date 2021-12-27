@@ -3,7 +3,6 @@
     padding: 0;
     margin: 0;
 }
-
 html {
     font-size: 62.5%;
     line-height: 1.6rem;
@@ -41,7 +40,7 @@ img {
     transition: all 300ms ease-in-out;
 }
 .btn:hover {
-    color: $white-color;
+    // color: $white-color;
 }
 .btn-rounded {
     border-radius: 10rem;
@@ -70,13 +69,16 @@ img {
     border-color: $rose-color;
     color: $white-color;
 }
+.btn-type-rose:hover {
+    color: $white-color;
+}
 .btn-circle {
     width: 45px;
     height: 45px;
     padding: 0;
-    border-radius: 10rem; 
-    display: inline-flex; 
-    align-items: center; 
+    border-radius: 10rem;
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
 }
 .btn-symbol {
@@ -87,6 +89,10 @@ img {
     background-color: $white-color;
     font-size: 1.5rem;
     color: $text-color;
+    opacity: 0.9;
+}
+.btn-play:hover {
+    opacity: 1;
 }
 .btn-radius {
     border-radius: 5rem;
@@ -102,7 +108,7 @@ img {
         font-size: 2rem;
     }
 }
-.btn-download:hover { 
+.btn-download:hover {
     color: $white-color;
     filter: brightness(90%);
 }

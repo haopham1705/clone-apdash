@@ -4,8 +4,10 @@
 
     &__img {
         // margin-bottom: 10rem;
+        width: 100%;
     }
 }
+
 .home-head {
     color: $white-color;
     line-height: 1.8;
@@ -54,7 +56,7 @@
     }
 }
 .card-y {
-    transition: all .2s;
+    transition: all 0.2s;
 }
 .card-y:hover {
     transform: translateY(-10px);
@@ -66,7 +68,6 @@
     padding: 1rem;
     line-height: 1.8;
     margin: 1rem;
-    cursor: pointer;
 
     &__body {
         padding: 2rem;
@@ -209,7 +210,7 @@
         }
     }
 }
- 
+
 .statistics-info {
     &__item {
         color: $white-color;
@@ -286,6 +287,7 @@
         font-size: 1.5rem;
     }
 }
+// Contact-Section
 .contact-field {
     border-radius: 5px;
     background-color: #f2f2f2;
@@ -328,7 +330,6 @@
         background-color: $secondary-color;
     }
 }
-
 .home-direction-list {
     list-style-type: none;
 }

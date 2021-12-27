@@ -43,7 +43,8 @@
         top: $header-height;
         left: 0;
         background: $gradient-primary-bg;
-        box-shadow: 5px 0px 22px 0px rgba(0, 0, 0, 0.34);
+        // box-shadow: 5px 0px 22px 0px rgba(0, 0, 0, 0.34);
+        box-shadow: $shadow-header-value;
         font-size: 1.5rem;
         // border: 1px solid red;
 
@@ -523,6 +524,9 @@
 .footer-bottom {
     color: $text-color;
     padding: 1rem 1rem;
+    &__content {
+
+    }
     &__info {
         font-size: 1.5rem;
         margin-bottom: 0;
@@ -539,9 +543,10 @@
     &__list {
         list-style-type: none;
         display: flex;
-        justify-content: end;
+        justify-content: start;
+        padding-left: 0;
         li {
-            margin-right: 2rem;
+            margin-right: 1.6rem;
             font-size: 1.5rem;
         }
     }

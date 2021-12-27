@@ -155,4 +155,9 @@
             }
         }
     }
+    .footer-bottom {
+        &__list {
+            justify-content: flex-end;
+        }
+    }
 }
