@@ -14,3 +14,33 @@ function navFunc(){
     }
 }
 
+// carousel img
+jQuery(document).ready(function ($) {
+    var feedbackSlider = $(".feedback-slider");
+    feedbackSlider.owlCarousel({
+        items: 1,
+        nav: true,
+        dots: true,
+        autoplay: true,
+        loop: true,
+        mouseDrag: true,
+        touchDrag: true,  
+        // responsive: {
+        // 767: {
+        // nav: true,
+        // dots: false
+        // }
+        // }
+    });
+});
+
+// client - carousel
+var swiperClient = new Swiper(".mySwiperCarousel", {
+    slidesPerView: 6,
+    spaceBetween: 8,
+    loop: true,
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false
+    }
+});

@@ -130,9 +130,7 @@ gulp.task("template", done => {
 	done();
 });
 
-
 // End build pages
-
 async function menuCate() { /* task */ }
 gulp.task('buildeEjs', done => {
 	return gulp.src('./app/page/**/*.ejs')
