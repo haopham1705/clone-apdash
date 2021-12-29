@@ -1,9 +1,8 @@
-// @import "./variables";
-// @import "./mixins";
 
 #app {
     // transition: margin-left 0.5s;
     position: relative;
+    overflow: hidden;
 }
 
 .header {
@@ -68,8 +67,8 @@
                 position: initial;
                 top: 100%;
                 left: 0;
-                background: $gradient-primary-bg;
-                box-shadow: $shadow-header-value;
+                background: transparent;
+                box-shadow: none;
                 list-style-type: none;
 
                 &__item {
@@ -150,17 +149,7 @@
     color: $white-color;
     text-align: center;
     box-shadow: inset 2000px 0 0 0 rgba(102, 49, 227, 0.856);
-}
-// .section-bg-scroll::before{
-//     position: absolute;
-//     content: '';
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     z-index: 1;
-//     background: $gradient-primary-bg;
-// }
+} 
 .home-side-img {
     margin: 2rem 0;
 }
@@ -260,6 +249,7 @@
 .white-color {
     color: $white-color;
 }
+// Card - style
 .card-member {
     display: flex;
     flex-direction: column;
@@ -303,6 +293,32 @@
         i {
             margin: 0 1rem;
         }
+    }
+}
+.card-info {
+    border: 1px solid $border-color;
+    box-shadow: $shadow-card-primary;
+    border-radius: 20px;
+    padding: 1rem;
+    line-height: 1.8;
+    margin: 1rem;
+
+    &__body {
+        padding: 2rem;
+        color: $text-color;
+    }
+    &__icon {
+        font-size: 4rem;
+        color: $primary-color;
+    } 
+    &__title {
+        font-size: 1.8rem;
+        font-weight: 550;
+        color: $title-text-color;
+    }
+    &__text {
+        font-size: 1.5rem;
+        margin: 1rem 0 0;
     }
 }
 
@@ -401,10 +417,12 @@
     }
 }
 
-/* Slider - swiper */
+/* Logo swiper */
 .carousel-customer {
     margin: 2rem 0;
-
+    .swiper-slide-client {
+        padding: 1rem 2rem;
+    }
     .carousel-wrap {
         margin: 10px auto;
         padding: 0;
@@ -418,7 +436,7 @@
             -webkit-backface-visibility: hidden;
             padding: 18px;
         }
-    } 
+    }
     .owl-nav > div {
         margin-top: -26px;
         position: absolute;
@@ -470,7 +488,7 @@
     background: $gradient-primary-bg;
     color: $white-color;
     margin-top: 100px;
-    padding: 50px 0;
+    padding: 50px 0 10px;
 
     &__intro {
         padding: 2rem;
@@ -521,11 +539,19 @@
         }
     }
 }
+// Card - style
+.card-y {
+    transition: all 0.2s;
+}
+.card-y:hover {
+    transform: translateY(-10px);
+}
+
+// Footer
 .footer-bottom {
     color: $text-color;
     padding: 1rem 1rem;
     &__content {
-
     }
     &__info {
         font-size: 1.5rem;

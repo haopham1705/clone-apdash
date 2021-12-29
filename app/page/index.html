@@ -10,10 +10,12 @@
 
 	<!-- build:content -->
 	<main id="content" class="main-content">
+
 		<section class="section-block section-home-head home-hero">
+
 			<div class="container">
 				<div class="row content-side-img">
-					<div class="col-lg-6 col-md-12">
+					<div class="col-lg-6 col-md-12 home-hero__left">
 						<div class="home-head">
 							<h1 class="title-font">
 								Best Way to Connect with Customers
@@ -23,12 +25,12 @@
 								Assertively underwhelm idea-sharing for impactful solutions.
 							</p>
 							<div class="home-head__btn-control">
-								<a href="#" class="btn btn-rounded btn-type-rose">
+								<a href="#" class="btn-c btn-c__rounded btn-c__rose">
 									Download Now
 									<i class="fas fa-cloud-download-alt pl-2"></i>
 								</a>
 								<div class="home-head__btn-play">
-									<a href="#" class="btn btn-circle btn-symbol btn-play">
+									<a href="#" class=" btn-circle">
 										<i class="fas fa-play"></i>
 									</a><span>Watch Now</span>
 								</div>
@@ -38,7 +40,7 @@
 									<div class="col-md-4 col-6">
 										<div class="counter-item">
 											<div class="counter-item__counter">
-												<span>123.00</span>
+												<span class="number-count-up" data-target="199.11">0</span>
 												<p>Total install</p>
 											</div>
 											<span class="counter-item__icon">
@@ -49,8 +51,8 @@
 									<div class="col-md-4 col-6">
 										<div class="counter-item">
 											<div class="counter-item__counter">
-												<span>123.00</span>
-												<p>Total install</p>
+												<span class="number-count-up" data-target="199.11">0</span>
+												<p>Total Download</p>
 											</div>
 											<span class="counter-item__icon">
 												<i class="fas fa-arrow-up icon-sm"></i>
@@ -60,8 +62,8 @@
 									<div class="col-md-4 col-6">
 										<div class="counter-item">
 											<div class="counter-item__counter">
-												<span>123.00</span>
-												<p>Total install</p>
+												<span class="number-count-up" data-target="199.11">0</span>
+												<p>Active Users</p>
 											</div>
 											<span class="counter-item__icon">
 												<i class="fas fa-arrow-up icon-sm"></i>
@@ -72,13 +74,16 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-5 col-md-6 col-12">
+					<div class="col-lg-5 col-md-6 col-12 home-hero__right">
 						<div class="home-hero__img">
 							<img src="images/content-img/app-mobile-image.png" alt="app vne" />
 						</div>
 					</div>
 				</div>
 			</div>
+			<!-- Bottom background -->
+			<div class="hero-bg-bottom"
+				style="background: url('./images/background/hero-bg-bottom.svg')no-repeat bottom center;"></div>
 		</section>
 
 		<!-- Card - info -->
@@ -184,19 +189,19 @@
 							<div class="row">
 								<div class="col-md-4 col-4 line-right">
 									<div class="counter-info">
-										<h4 class="counter-info__number">5433</h4>
+										<h4 class="counter-info__number number-count-up" data-target="5432">0</h4>
 										<p class="counter-info__text">Customers</p>
 									</div>
 								</div>
 								<div class="col-md-4 col-4 line-right">
 									<div class="counter-info">
-										<h4 class="counter-info__number">5433</h4>
+										<h4 class="counter-info__number number-count-up" data-target="5432">0</h4>
 										<p class="counter-info__text">Customers</p>
 									</div>
 								</div>
 								<div class="col-md-4 col-4">
 									<div class="counter-info">
-										<h4 class="counter-info__number">5433</h4>
+										<h4 class="counter-info__number number-count-up" data-target="5432">0</h4>
 										<p class="counter-info__text">Customers</p>
 									</div>
 								</div>
@@ -250,8 +255,8 @@
 								</li>
 							</ul>
 							<div class="content-list__btn">
-								<a href="#" class="btn btn-type-primary">Get More Now</a>
-								<a href="#" class="btn btn-type-line">About Us</a>
+								<a href="#" class="btn-c btn-c__primary">Get More Now</a>
+								<a href="#" class="btn-c btn-c__line">About Us</a>
 							</div>
 						</div>
 					</div>
@@ -268,7 +273,7 @@
 						awareness, drive traffic, connect. Efficiently transform granular value with client-focused
 						content. Energistically redefine market.</p>
 					<div class="content-bg__download">
-						<a href="#" class="btn btn-download">
+						<a href="#" class="btn-c btn-c__download">
 							<i class="fab fa-windows"></i>
 							<div class="btn-download__text">
 								<small>Download from</small>
@@ -276,7 +281,7 @@
 							</div>
 						</a>
 
-						<a href="#" class="btn btn-download">
+						<a href="#" class="btn-c btn-c__download">
 							<i class="fab fa-apple"></i>
 							<div class="btn-download__text">
 								<small>Download from</small>
@@ -284,7 +289,7 @@
 							</div>
 						</a>
 
-						<a href="#" class="btn btn-download">
+						<a href="#" class="btn-c btn-c__download">
 							<i class="fab fa-google-play"></i>
 							<div class="btn-download__text">
 								<small>Download from</small>
@@ -390,7 +395,7 @@
 			</div>
 		</section>
 
-		<!-- Screenshot app-->
+		<!-- Carousel -Screenshot -->
 		<section class="section-block-grey">
 			<div class="container">
 				<div class="row center-head-title">
@@ -405,9 +410,36 @@
 						</div>
 					</div>
 				</div>
+				<!-- Screenshot carousel -->
 				<div class="row">
 					<div class="col-md-12">
-						<img src="./images/screenshot/screenshot.jpg" alt="">
+						<div id="screenshot-carousel" class="owl-carousel screenshot-carousel"> 
+							<div class="item">
+								<div class="shadow-effect">
+									<img class="img-circle" src="./images/screenshot/01.jpeg" alt="">
+								</div>
+							</div> 
+							<div class="item">
+								<div class="shadow-effect">
+									<img class="img-circle" src="./images/screenshot/02.jpeg" alt="">
+								</div>
+							</div> 
+							<div class="item">
+								<div class="shadow-effect">
+									<img class="img-circle" src="./images/screenshot/03.jpeg" alt="">
+								</div>
+							</div> 
+							<div class="item">
+								<div class="shadow-effect">
+									<img class="img-circle" src="./images/screenshot/04.jpeg" alt="">
+								</div>
+							</div> 
+							<div class="item">
+								<div class="shadow-effect">
+									<img class="img-circle" src="./images/screenshot/05.jpeg" alt="">
+								</div>
+							</div> 
+						</div>
 					</div>
 				</div>
 			</div>
@@ -506,7 +538,7 @@
 			</div>
 		</section>
 
-		<!-- Statistics - info -->
+		<!-- Statistics -Info -->
 		<section class="section-block-bg">
 			<div class="statistics-info">
 				<div class="container">
@@ -514,28 +546,28 @@
 						<div class="col-12 col-sm-6 col-md-6 col-lg-3">
 							<div class="statistics-info__item">
 								<i class="fas fa-users"></i>
-								<h2 class="statistics-info__number">21023</h2>
+								<h2 class="statistics-info__number number-count-up" data-target="12345">0</h2>
 								<h5 class="statistics-info__text">Customers</h5>
 							</div>
 						</div>
 						<div class="col-12 col-sm-6 col-md-6 col-lg-3">
 							<div class="statistics-info__item">
 								<i class="fas fa-cloud-download-alt"></i>
-								<h2 class="statistics-info__number">21023</h2>
+								<h2 class="statistics-info__number number-count-up" data-target="12345">0</h2>
 								<h5 class="statistics-info__text">Download</h5>
 							</div>
 						</div>
 						<div class="col-12 col-sm-6 col-md-6 col-lg-3">
 							<div class="statistics-info__item">
 								<i class="far fa-smile"></i>
-								<h2 class="statistics-info__number">21023</h2>
+								<h2 class="statistics-info__number number-count-up" data-target="12345">0</h2>
 								<h5 class="statistics-info__text">Satisfied</h5>
 							</div>
 						</div>
 						<div class="col-12 col-sm-6 col-md-6 col-lg-3">
 							<div class="statistics-info__item">
 								<i class="fas fa-coffee"></i>
-								<h2 class="statistics-info__number">21023</h2>
+								<h2 class="statistics-info__number number-count-up" data-target="12345">0</h2>
 								<h5 class="statistics-info__text">Cup Of Coffee</h5>
 							</div>
 						</div>
@@ -578,7 +610,7 @@
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-4 col-12">
-						<div class="card-pricing card-y">
+						<div class="card-pricing card-pricing--active">
 							<div class="card-pricing__img">
 								<img src="./images/content-img/pricing-img-1.png" alt="vne pricing standard">
 							</div>
@@ -730,7 +762,7 @@
 			</div>
 		</section>
 
-		<!-- Client Feedback Carousel -->
+		<!-- Carousel -Feedback-->
 		<section class="section-block-bg">
 			<div class="container">
 				<div class="row content-side-img">
@@ -745,16 +777,72 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-md-6 col-12 d-flex justify-content-end">
+					<div class="col-md-6 col-12">
 						<!-- Carousel - Owl -->
-						<img style="max-width: 400px;" src="./images/screenshot/screenshot-comment.jpg"
-							alt="client vne commnent">
+						<!-- <img style="max-width: 400px;" src="./images/screenshot/screenshot-comment.jpg"  alt="client vne commnent"> -->
+
+							<div class="owl-carousel feedback-slider" id="feedback-slider">
+								<!-- slider item -->
+								<div class="feedback-slider__item">
+									<div class="feedback-slider__mark">
+										<div class="feedback-slider__avatar">
+											<img src="./images/content-img/team-member-1.png" alt="">
+											<div class="feedback-info">
+												<h4 class="feedback-info__name">John Doe</h4>
+												<h5 class="feedback-info__title">Marketing Head</h5>
+											</div>
+										</div>
+										<i class="fas fa-quote-right"></i>
+									</div>
+									<p>1- Lorem Ipsum is simply dummy text of the printing and typesetting industry. It is
+										a
+										long established fact that a reader will be distracted by the readable its layout.
+									</p>
+									
+								</div>
+								<!-- slider item -->
+								<div class="feedback-slider__item">
+									<div class="feedback-slider__mark">
+										<div class="feedback-slider__avatar">
+											<img src="./images/content-img/team-member-1.png" alt="">
+											<div class="feedback-info">
+												<h4 class="feedback-info__name">John Doe</h4>
+												<h5 class="feedback-info__title">Marketing Head</h5>
+											</div>
+										</div>
+										<i class="fas fa-quote-right"></i>
+									</div>
+									<p>2- Lorem Ipsum is simply dummy text of the printing and typesetting industry. It is
+										a
+										long established fact that a reader will be distracted by the readable its layout.
+									</p>
+									
+								</div>
+								<!-- slider item -->
+								<div class="feedback-slider__item">
+									<div class="feedback-slider__mark">
+										<div class="feedback-slider__avatar">
+											<img src="./images/content-img/team-member-1.png" alt="">
+											<div class="feedback-info">
+												<h4 class="feedback-info__name">John Doe</h4>
+												<h5 class="feedback-info__title">Marketing Head</h5>
+											</div>
+										</div>
+										<i class="fas fa-quote-right"></i>
+									</div>
+									<p>3- Lorem Ipsum is simply dummy text of the printing and typesetting industry. It is
+										a
+										long established fact that a reader will be distracted by the readable its layout.
+									</p>
+									
+								</div>
+							</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- card - members -->
+		<!-- Card -members -->
 		<section class="section-block-grey">
 			<div class="container">
 				<div class="row center-head-title">
@@ -860,11 +948,11 @@
 					<div class="col-md-6 col-12">
 						<div class="contact-field">
 							<h1 class="title-font contact-field__title">Ready to get started?</h1>
-							<form action="" class="contact-form"> 
+							<form action="" class="contact-form">
 								<input type="text" id="fname" name="firstname" placeholder="Enter name">
- 
+
 								<input type="email" id="f-email" name="f-email" placeholder="Enter Email">
- 
+
 								<textarea id="subject" name="subject" placeholder="Message"
 									style="height:200px"></textarea>
 
@@ -1008,7 +1096,7 @@
 			</div>
 		</section>
 
-		<!-- Customer - carousel -->
+		<!-- Carousel -logo -->
 		<section class="section-block">
 			<div class="container">
 				<div class="row center-head-title">
@@ -1028,7 +1116,7 @@
 					<div class="col-md-12">
 						<!-- carousel -->
 						<div class="carousel-customer">
-							<div class="carousel-wrap">
+							<!-- <div class="carousel-wrap">
 								<div class="owl-carousel">
 									<div class="item"><img src="./images/customer-img/clients-logo-01.png"></div>
 									<div class="item"><img src="./images/customer-img/clients-logo-02.png"></div>
@@ -1038,8 +1126,8 @@
 									<div class="item"><img src="./images/customer-img/clients-logo-06.png"></div>
 									<div class="item"><img src="./images/customer-img/clients-logo-07.png"></div>
 								</div>
-							</div>
-							<!-- <div class="swiper mySwiperCarousel">
+							</div> -->
+							<div class="swiper mySwiperCarousel" id="mySwiperCarousel">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide swiper-slide-client">
 										<img src="./images/customer-img/clients-logo-01.png" alt="client img"
@@ -1070,7 +1158,7 @@
 											class="client-section__img">
 									</div>
 								</div>
-							</div> -->
+							</div>
 						</div>
 					</div>
 				</div>

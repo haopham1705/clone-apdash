@@ -13,7 +13,7 @@ html {
  -> define value of rem unit (1rem = 10px) */
 body {
     color: $text-color;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Open sans", sans-serif;
 }
 #app {
     // overflow-y: hidden;
@@ -22,6 +22,7 @@ img {
     width: 100%;
     height: auto;
 }
+// text -style
 .title-font {
     font-family: "Montserrat", sans-serif;
 }
@@ -31,84 +32,98 @@ img {
 .white-color {
     color: $white-color;
 }
-.btn {
-    position: relative;
+// button -style
+.btn-c {
+    // position: relative;
     font-family: "Montserrat", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    text-align: center;
     font-weight: 500;
-    padding: 10px 35px;
-    transition: all 300ms ease-in-out;
-}
-.btn:hover {
-    // color: $white-color;
-}
-.btn-rounded {
-    border-radius: 10rem;
-}
-.btn-type-primary {
-    background-color: $primary-color;
-    border: $primary-color;
+    padding: 11px 40px;
+    transition: filter 0.3s ease;
+    min-width: 170px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
     color: $white-color;
-    min-width: 150px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &__rounded {
+        border-radius: 50px;
+    }
+
+    &:hover {
+        filter: brightness(80%);
+        color: $white-color;
+    }
+    &__primary {
+        background-color: $primary-color;
+        color: $white-color;
+    }
+    &__line {
+        border: 1px solid $primary-color;
+        color: $primary-color;
+    }
+    &__line:hover {
+        background-color: $primary-color;
+        color: $white-color;
+    }
+    &__rose {
+        background-color: $rose-color;
+    }
+    &--disabled {
+        opacity: 0.5;
+        cursor: default;
+    }
+    & + & {
+        margin-left: 15px;
+    }
 }
-.btn-type-primary:hover {
-    color: $white-color;
-}
-.btn-type-line {
-    background-color: $white-color;
-    border-color: $primary-color;
-    color: $primary-color;
-    min-width: 150px;
-}
-.btn-type-line:hover {
-    background-color: $primary-color;
-    color: $white-color;
-}
-.btn-type-rose {
-    background-color: $rose-color;
-    border-color: $rose-color;
-    color: $white-color;
-}
-.btn-type-rose:hover {
-    color: $white-color;
-}
+// .btn-c + .btn-c {
+//     margin-left: 15px;
+// }
+
 .btn-circle {
-    width: 45px;
-    height: 45px;
-    padding: 0;
-    border-radius: 10rem;
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 50%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-}
-.btn-symbol {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-}
-.btn-play {
     background-color: $white-color;
     font-size: 1.5rem;
     color: $text-color;
     opacity: 0.9;
+
+    &:hover {
+        // opacity: 1;
+        filter: brightness(150%);
+    }
 }
-.btn-play:hover {
-    opacity: 1;
-}
-.btn-radius {
-    border-radius: 5rem;
-}
-.btn-download {
+// .btn-c-radius {
+//     border-radius: 5rem;
+// }
+.btn-c__download {
     color: $white-color;
     display: inline-flex;
     align-items: center;
     background-color: $primary-color;
     border-radius: 50px;
+    margin: 2.5rem 1rem 0 0;
+
+    & + & {
+    margin-left: 0;
+    }
+    
     i {
-        margin-right: 10px;
+        margin-right: 1rem;
         font-size: 2rem;
     }
 }
-.btn-download:hover {
+.btn-c__download:hover {
     color: $white-color;
     filter: brightness(90%);
 }
