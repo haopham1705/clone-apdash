@@ -345,6 +345,9 @@
 }
 
 // Screenshot-carousel style
+.screenshot-wrap-content {
+    position: relative;
+}
 .shadow-effect {
     background-color: transparent;
 }
@@ -358,7 +361,7 @@
 #screenshot-carousel .item {
     text-align: center;
     margin-bottom: 50px;
-    opacity: 0.8;
+    opacity: 0.6;
     transform: scale3d(0.8, 0.8, 1);
     transition: all 0.3s ease-in-out;
 }
@@ -366,9 +369,10 @@
     opacity: 1;
     transform: scale3d(1, 1, 1);
 }
-#screenshot-carousel .owl-carousel .owl-item img {
+.screenshot-carousel .owl-item img {
     transform-style: preserve-3d;
-    width: 90%;
+    width: 100%;
+    max-width: 340px;
     margin: 0 auto 17px;
     border-radius: 25px;
 }
@@ -395,6 +399,23 @@
     width: 18px;
     border-radius: 50%;
     margin: 0 5px;
+}
+// screenshot - frame
+.screenshot-frame {
+    background-image: url(../images/screenshot/iphone-frame-mask.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    width: 290px;
+    height: 513px;
+    position: absolute;
+    top: -10px;
+    left: calc(50% + 0.5px);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 2;
+    border-radius: 20px;
+
 }
 
 // Testimonial -Style

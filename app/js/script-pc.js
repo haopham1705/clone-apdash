@@ -74,48 +74,6 @@ function infoNumbers() {
 infoNumbers();
 // End Count Up
 
-// carousel img
-// jQuery(document).ready(function ($) {
-//     var feedbackSlider = $(".feedback-slider");
-//     feedbackSlider.owlCarousel({
-//         items: 1,
-//         nav: true,
-//         dots: true,
-//         autoplay: true,
-//         loop: true,
-//         mouseDrag: true,
-//         touchDrag: true, 
-//     });
-// });
-
-// $('#clients-carousel-logo').owlCarousel({
-//     autoplay: true,
-//     loop: true,
-//     margin: 15,
-//     dots: false,
-//     slideTransition: 'linear',
-//     autoplayTimeout: 4500,
-//     autoplayHoverPause: true,
-//     autoplaySpeed: 4500,
-//     responsive: {
-//         0: {
-//             items: 2
-//         },
-//         500: {
-//             items: 3
-//         },
-//         600: {
-//             items: 4
-//         },
-//         800: {
-//             items: 5
-//         },
-//         1200: {
-//             items: 6
-//         }
-//     }
-// });
-
 // client - carousel
 var swiperClient = new Swiper(".mySwiperCarousel", {
     slidesPerView: 6,
@@ -135,7 +93,7 @@ var swiperClient = new Swiper(".mySwiperCarousel", {
         margin: 0,
         autoplay: true,
         dots: true,
-        autoplayTimeout: 8500,
+        autoplayTimeout: 6500,
         smartSpeed: 250,
         responsive: {
             0: {
